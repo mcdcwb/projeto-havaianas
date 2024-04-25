@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+:root {
+    --menu-bg: rgb(40,35,38);
+    --amarelo-pastel: #f0e68c;
+    --gold: #FA8072;
+    --verm-esc: #DC143C;
+    --light-steel-blue: #000000;
+    --cinza-claro: rgb(200,200,200);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+}
+
+.card {
+    background-color: #fff;
+    width: 300px;
+    height: 480px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #aaaa;
+    padding: 1rem;
+    margin: 0.4rem;
+}
+
+.card img {
+    margin: 1rem 0rem 1rem 0rem;
+    height: 250px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: 100%;
+}
+ 
+.card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    height: auto;
+}
+
+.card h1 {
+    font-size: 1.3rem;
+}
+
+.card h2 {
+    font-size: .8rem;
+    color: var(--verm-esc);
+}
+
+/*
+.card a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+*/
+
+.comprar {
+    background-color: #2192FF;
+    height: 30px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 0.3rem;
+}
+
+.comprar:hover {
+    background-color: var(--verm-esc);
+    cursor: pointer;
+}
+
+.produtos-cores {
+    background-color: var(--cinza-claro);
+    border: none;
+    padding: 4px;
+    width: 80%;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 4px;
+    color: var(--light-steel-blue);
+}
+
+.card span {
+    font-size: 1.2rem;
+}
+
+li#produtos-s a{
+    color: var(--cinza-claro);
+}
+
+/* 
+li#produtos-s a:hover{
+    color: var(--verm-esc);
+  }
+*/
+
+@media (max-width: 600px) {
+    body {
+        display: grid;
+        margin: 4rem 0rem 3rem 0rem;
+       
+    }
+}

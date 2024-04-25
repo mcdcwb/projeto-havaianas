@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <link rel="stylesheet" href="./css/contato.css" />
+    <title>Fale Conosco - Havaianas</title>
+</head>
+<body>
+
+<header class="header">
+    <a class="logo" id="logo-menu" href="index.html"><img src="./img/icone.png"></a>
+    <nav class="nav">
+        <input type="checkbox" id="checkbox" class="checkbox" />
+        <label for="checkbox" class="label-menu"><p>Fale Conosco</p><span class="hamburger"></span></label>
+        <ul class="menu">
+            <li id="menu-s"><a href="index.html">Início</a></li>
+            <li id="produtos-s"><a href="produtos.html">Produtos</a></li>
+            <li id="contato-s"><a href="contato.html">Fale Conosco</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="formulario">
+    <form method="post" id="contato" action="mailto:machadoluaan@outlook.com" oninput="calc-total();">
+        <fieldset id="usuario">
+            <legend id="dados-pessoais">Dados Pessoais</legend>
+                <p><label for="fNome">Nome Completo: <input id="fNome" type="text" size="40" maxlength="50" placeholder="&nbsp; Digite seu nome"/> </label></p>
+                <p><label for="fSenha">Senha: <input id="fSenha" type="password" size="20" maxlength="10" placeholder="&nbsp; Máximo 10 caracteres"/> </label></p>
+                <p><label for="fEmail">E-mail: <input id="fEmail" type="email" size="40" max aria-level="40" placeholder="&nbsp; Digite seu e-mail"/> </label></p>
+        
+        <fieldset id="sexo-data">
+                <p>Sexo: 
+                <input class="sexo" type="radio" name="tSexo" id="cOutro" checked/> <label for="cOutro">Prefiro não dizer</label>
+                <input class="sexo" type="radio" name="tSexo" id="cMasc"/> <label for="cMasc">Masculino</label>
+                <input class="sexo" type="radio" name="tSexo" id="cFem"/> <label for="cFem">Feminino</label></p>
+                <label for="cNasc"> Data de Nascimento: <input type="date" class="datan" name="tNasc" id="cNasc"></p></label>
+                </p>
+        </fieldset>
+        <input type="image" name="tEnviar" src="./img/botao-enviar.png"/>
+        </fieldset>
+
+        
+        
+    </form>
+
+</div>
+
+<div class="formulario-responsivo">
+    <form method="post" id="contato-responsivo" action="mailto:machadoluaan@outlook.com" oninput="calc-total();">
+        <fieldset id="usuario-responsivo">
+            <legend id="dados-pessoais-responsivo">Dados Pessoais</legend>
+                <p><label for="fNome">Nome Completo: <input id="fNome" type="text" size="20" maxlength="50" placeholder="&nbsp; Digite seu nome"/> </label></p>
+                <p><label for="fSenha">Senha: <input id="fSenha" type="password" size="20" maxlength="10" placeholder="&nbsp; Máximo 10 caracteres"/> </label></p>
+                <p><label for="fEmail">E-mail: <input id="fEmail" type="email" size="20" max aria-level="40" placeholder="&nbsp; Digite seu e-mail"/> </label></p>
+        
+        <fieldset id="sexo-data-responsivo">
+                <p>Sexo:</p>
+                <p><input class="sexo" type="radio" name="tSexo" id="cOutro-responsivo" checked/> <label for="cOutro-responsivo">Prefiro não dizer</label></p>
+                <p><input class="sexo" type="radio" name="tSexo" id="cMasc-responsivo"/> <label for="cMasc-responsivo">Masculino</label></p>
+                <p><input class="sexo" type="radio" name="tSexo" id="cFem-responsivo"/> <label for="cFem-responsivo">Feminino</label></p>
+                <p><label for="cNasc"> Data de Nascimento: <input type="date" class="datan" name="tNasc" id="cNasc"></p></label></p>
+        </fieldset>
+        <input class="botao-enviar-responsivo" type="image" name="tEnviar" src="./img/botao-enviar.png"/>
+        </fieldset>
+
+
+        
+    </form>
+
+</div>
+    
+
+<footer class="footer">
+    <div class="rodape">
+        <p>Copyright &copy; - por Luan Machado</p>
+        <p><a href="https://www.linkedin.com/in/luanmachadof/" target="_blank">LinkedIn</a> |
+        <a href="https://www.instagram.com/mcd.luan/" target="_blank">Instagram</a></p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <link rel="stylesheet" href="./css/produtos.css" />
+    <title>Produtos - Havaianas</title>
+</head>
+<body>
+
+<header class="header">
+    <a class="logo" id="logo-menu" href="index.html"><img src="./img/icone.png"></a>
+    <nav class="nav">
+        <input type="checkbox" id="checkbox" class="checkbox" />
+        <label for="checkbox" class="label-menu"><p>Produtos</p><span class="hamburger"></span></label>
+        <ul class="menu">
+            <li id="menu-s"><a href="index.html">Início</a></li>
+            <li id="produtos-s"><a href="produtos.html">Produtos</a></li>
+            <li id="contato-s"><a href="contato.html">Fale Conosco</a></li>
+        </ul>
+    </nav>
+</header>
+
+<a href="prod-top.html" id="aTop">
+<div class="card">  
+    <img src="./img/top/top-preta.png" alt="Havaianas Top"></a>
+            <div>
+            <h1>Havaianas Top</h1>
+            <h2>Clássica Unissex</h2>
+            <span id="preco-top">R$49,90</span>
+            <button class="produtos-cores">Apenas Cor Preta Disponível</button>
+            <button class="comprar" id="bTop">Comprar</button>
+        </div>
+</div>
+
+
+<a href="prod-slim.html" id="aSlim">
+<div class="card"> 
+    <img src="./img/slim/slim-preta.png" alt="Havaianas Slim"></a>
+        <div>
+            <h1>Havaianas Slim</h1>
+            <h2>Clássica Feminina</h2>
+            <span id="preco-slim">R$49,90</span>
+            <button class="produtos-cores">Apenas Cor Preta Disponível</button>
+            <button class="comprar" id="bSlim">Comprar</button>
+        </div>
+</div>
+</a>
+
+
+
+
+
+<a href="prod-alpargata.html" id="aAlpargata">
+<div class="card">  
+    <img src="./img/alpargata/alpargata-preta.png" alt="Alpargata Havaianas"></a>
+        <div>
+            <h1>Alpargata Havaianas</h1>
+            <h2>Clássica Unissex</h2>
+            <span id="preco-alpargata">R$79,90</span>
+            <button class="produtos-cores">Apenas Cor Preta Disponível</button>
+            <button class="comprar" id="bAlpargata">Comprar</button>
+        </div>
+</div>
+
+
+
+
+<footer class="footer">
+    <div class="rodape">
+        <p>Copyright &copy; - por Luan Machado</p>
+        <p><a href="https://www.linkedin.com/in/luanmachadof/" target="_blank">LinkedIn</a> |
+        <a href="https://www.instagram.com/mcd.luan/" target="_blank">Instagram</a></p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('bTop').onclick = function (event) {
+        event.stopPropagation(); 
+        window.location.href = document.getElementById('aTop').href;
+    };
+
+    document.getElementById('bSlim').onclick = function (event) {
+        event.stopPropagation(); 
+        window.location.href = document.getElementById('aSlim').href;
+    };
+
+    document.getElementById('bAlpargata').onclick = function (event) {
+        event.stopPropagation(); 
+        window.location.href = document.getElementById('aAlpargata').href;
+    };
+</script>
+
+</body>
+</html>

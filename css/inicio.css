@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+li#menu-s a{
+    color: var(--cinza-claro);
+}
+
+li#menu-s a:hover{
+    color: var(--verm-esc);
+}
